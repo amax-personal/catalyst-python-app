@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "catalyst-python-app"
+  description: "a python app with simple single web page"
+  annotations:
+    # 关联 GitHub 仓库，以便在 Backstage 界面查看 Actions 状态
+    github.com/project-slug: amax-personal/catalyst-python-app
+    # 如果你后续安装了 ArgoCD 插件，可以添加这个
+    # argocd/app-name: catalyst-python-app
+  links:
+    - title: 阿里云 ACR 仓库
+      url: https://crpi-zwbmpse5bz48kucd.cn-shanghai.personal.cr.aliyuncs.com/#/blockList
+      icon: dashboard
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/catalyst"
