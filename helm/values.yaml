@@ -2,7 +2,7 @@ replicaCount: 3
 image:
   repository: crpi-zwbmpse5bz48kucd.cn-shanghai.personal.cr.aliyuncs.com/amaxzhong/catalyst-python-app
   pullPolicy: IfNotPresent
-  tag: "latest"
+  tag: "4cc0dab"
 imagePullSecrets:
   - name: aliyun-registry-secret
 # This is to override the chart name.
